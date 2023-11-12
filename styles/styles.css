@@ -9,13 +9,7 @@
 
   max-width: 146.4rem;
   margin: 0 auto;
-  background-color: F5F5F7;
-}
-
-.header--grid {
-  display: grid;
-  grid-template-columns: minmax(0, 40rem) minmax(0, 103.2rem);
-  column-gap: 3.2rem;
+  /* background-color: red; */
 }
 
 .navbar-container {
@@ -71,4 +65,63 @@
 
   color: #333;
   text-decoration: none;
+}
+
+/* ---------------------- */
+/*02 HERO SECTION */
+/* ---------------------- */
+.hero {
+  /* background-color: #333; */
+  height: 40rem;
+}
+.profile-media {
+  display: grid;
+  grid-template-columns: repeat(4, 10rem);
+  grid-template-rows: repeat(4, 10rem);
+}
+
+/* .profile-media {
+  display: flex;
+  height: 30rem;
+} */
+
+/* .image-container {
+  background-color: #fff;
+} */
+
+.logo {
+  display: inline-block;
+  width: 20rem;
+  height: 20rem;
+  background-color: #fff;
+  border-radius: 10rem;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.image-container {
+  grid-column: 2 /4;
+  grid-row: 2 /4;
+}
+
+.socials-container {
+  /* background-color: wheat; */
+  grid-column: 2 /5;
+  grid-row: 4 /5;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.socials-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
