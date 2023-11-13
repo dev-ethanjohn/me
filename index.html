@@ -28,8 +28,8 @@
       <div class="toggle-container">
         <div class="switch">
           <div class="toggle">
-            <ion-icon name="sunny-outline"></ion-icon>
-            <ion-icon name="moon-outline"></ion-icon>
+            <ion-icon name="sunny-outline" class="toggle-icon"></ion-icon>
+            <ion-icon name="moon-outline" class="toggle-icon"></ion-icon>
           </div>
         </div>
       </div>
@@ -56,20 +56,26 @@
     <!-- HEADER END -->
 
     <!-- MAIN START -->
-    <main>
-      <section class="hero grid-container--primary center">
-        <div class="profile-media">
-          <figure class="image-container">
-            <svg
+    <main class="center f-dark">
+      <div class="grid">
+        <!-- Profile-Media SECTION START -->
+        <section class="profile-media">
+          <div class="image-container">
+            <!-- <svg
               class="logo"
-              width="200"
+              width="400"
               height="200"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <text x="30" y="130" font-size="100" fill="#fff">me</text>
-            </svg>
-          </figure>
-          <figure class="socials-container">
+              <text x="20" y="95" font-size="86" fill="#fff" class="sv">
+                me
+              </text>
+            </svg> -->
+
+            <img src="/images/logo.png" alt="" class="logo" />
+          </div>
+
+          <div class="socials-container">
             <div class="socials-media">
               <ion-icon
                 name="logo-facebook"
@@ -84,39 +90,58 @@
                 class="socials-icon icon-tight icon-dark"
               ></ion-icon>
             </div>
+
             <div class="socials-work">
               <ion-icon name="logo-codepen" class="socials-icon"></ion-icon>
               <ion-icon name="logo-github" class="socials-icon"></ion-icon>
               <ion-icon name="logo-linkedin" class="socials-icon"></ion-icon>
             </div>
-          </figure>
-        </div>
-        <div class="intro">
-          <h1>Hi, I'm Ethan</h1>
-          <p>
-            As a seasoned web developer, I fuse creativity with technical skill
-            to bring digital visions to reality. Specializing in user-friendly,
-            responsive design, I create cutting-edge websites that captivate.
-            Let's collaborate and bring your online presence to LIFE.
-          </p>
-        </div>
-      </section>
+          </div>
+        </section>
+        <!-- Profile Media SECTION END -->
 
-      <!-- Service SECTION START -->
-      <section class="services">
-        <div class="skills">
-          <div class=""></div>
-        </div>
-        <div class="what-i-do">
-          <div class="service"></div>
-          <div class="service"></div>
-          <div class="service"></div>
-        </div>
-      </section>
-      <!-- Service SECTION END -->
+        <!-- INTRO SECTION START -->
+        <section class="intro card card-light"></section>
+        <!-- INTRO SECTION END -->
 
-      <!--  -->
+        <!-- SERVICES SECTION START -->
+        <section class="services">
+          <div class="service-one">
+            <h2 class="heading-secondary">what I do</h2>
+            <div class="service-one-box card card-light"></div>
+          </div>
+          <div class="service card card-light"></div>
+          <div class="service card card-light"></div>
+        </section>
+        <!-- SERVICES SECTION END -->
+
+        <!-- SKILLS SECTION START -->
+        <section class="skills card card-light"></section>
+        <!-- SKILLS SECTION START -->
+
+        <!-- PROJECT SECTION START -->
+        <section class="projects">
+          <div class="project-one">
+            <h2 class="heading-secondary">my works</h2>
+            <div class="project-one-box card card-light"></div>
+          </div>
+          <div class="project card card-light"></div>
+          <div class="project card card-light"></div>
+        </section>
+        <!-- PROJECT SECTION END -->
+
+        <!-- CTA SECTION START -->
+        <section class="cta">
+          <div class="contact-container card card-light"></div>
+        </section>
+        <!-- CTA SECTION END-->
+      </div>
     </main>
+    <footer>
+      <div class="footer-container">
+        <h1>Hello</h1>
+      </div>
+    </footer>
 
     <!-- MAIN END -->
   </body>

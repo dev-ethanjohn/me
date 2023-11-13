@@ -6,12 +6,12 @@
   display: flex;
   align-items: center;
   height: 9.6rem;
-
-  /* max-width: 146.4rem;
-  margin: 0 auto; */
-  /* background-color: red; */
 }
 
+.toggle-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -24,9 +24,9 @@
   align-items: center;
 
   border-radius: 10rem;
-  background-color: rgb(223, 223, 223);
-  padding: 0.6rem 1rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 1.95px 2.95px 3.6px;
+  padding: 0.2rem 2rem;
+  box-shadow: rgb(209, 211, 212) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .main-nav-link.active {
@@ -46,23 +46,22 @@
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #ffffff;
+  color: #777;
   font-weight: 500;
   transition: all 0.3s;
   font-weight: 700;
-  padding: 1rem 1.6rem;
+  padding: 1.6rem 3.6rem;
 }
 
 .nav-btn {
   display: flex;
   align-items: center;
-  padding: 1rem 1.6rem;
+  padding: 2rem 3.2rem;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
     rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
     rgba(0, 0, 0, 0.07) 0px 16px 16px;
   border-radius: 50px;
-
   color: #333;
   text-decoration: none;
 }
@@ -70,44 +69,110 @@
 /* ---------------------- */
 /*02 HERO SECTION */
 /* ---------------------- */
-.hero {
-  height: 40rem;
+
+main {
+  margin-top: 4rem !important;
 }
-.profile-media {
+
+.grid {
+  max-height: 140rem;
+  max-width: 100%;
+  margin-bottom: 9.6rem;
   display: grid;
-  grid-template-columns: repeat(4, 10rem);
-  grid-template-rows: repeat(4, 10rem);
+  /* max-height: 227.65rem;
+  max-width: 198.4rem; */
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 3.2rem;
 }
 
-.logo {
-  display: inline-block;
-  width: 20rem;
-  height: 20rem;
-  background-color: #333;
-  border-radius: 10rem;
+/* SERVICES SECTION */
+.intro {
+  grid-column: 3 /8;
+  grid-row: 1/3;
+  border-radius: 1.6rem 16rem 1.6rem 1.6rem !important;
+}
 
+.skills {
+  grid-column: 1/3;
+  grid-row: 3/7;
+  border-radius: 16rem 1.6rem 1.6rem 1.6rem !important;
+}
+.projects {
+  grid-column: 3/8;
+  grid-row: 5/7;
+}
+
+/* PROFILE MEDIA (01) */
+
+/* .profile-media {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+} */
+
+.profile-media {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+/* children of profile media */
+.image-container {
+  grid-column: 3/6;
+  grid-row: 2/5;
+
+  background-color: #252525;
+  border-radius: 10rem !important;
+
+  box-shadow: rgba(0, 0, 0, 0.3) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.2) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.6) 0px 2px 1px,
+    rgba(0, 0, 0, 0.4) 0px 4px 2px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .logo {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
+} */
+
+.logo {
+  width: 100%;
+  opacity: 35%;
 }
 
-.image-container {
-  grid-column: 3 /4;
-  grid-row: 2 /4;
+.image-container::after {
+  top: 25%;
+  right: 34.75%;
+  content: 'me';
+  position: absolute;
+  font-size: 6rem;
+  color: rgb(255, 255, 255);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
 }
 
 .socials-container {
-  grid-column: 2 /5;
-  grid-row: 4 /5;
-
+  grid-column: 3/6;
+  grid-row: 4/6;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
 .socials-icon {
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 2.4rem;
+  height: 2.4rem;
   background-color: #fff;
   padding: 0.5rem;
   border-radius: 5rem;
@@ -122,17 +187,110 @@
 }
 
 .icon-dark {
-  /* background-color: #414141; */
   color: #333;
 }
 
-.intro {
-  background-color: #fff;
-  height: 40rem;
-  max-width: 103.2rem;
-  box-shadow: rgba(0, 0, 0, 0.035) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
-    rgba(0, 0, 0, 0.035) 0px 4px 4px, rgba(0, 0, 0, 0.035) 0px 8px 8px,
-    rgba(0, 0, 0, 0.035) 0px 16px 16px;
-  color: #333;
-  border-radius: 1.6rem 9.8rem 1.6rem 3rem;
+/* ---------------------- */
+/*04 SERVICES SECTION */
+/* ---------------------- */
+.services {
+  display: grid;
+  grid-column: 3 /8;
+  grid-row: 3/5;
+
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+
+.service-one {
+  grid-column: 4/6;
+  grid-row: 1/3;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.service-one-box {
+  grid-column: 1/7;
+  grid-row: 2/7;
+}
+
+/* #section-one {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+} */
+
+.service:nth-of-type(2) {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.service:last-of-type {
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+
+/* ---------------------- */
+/*05 PROJECTS SECTION */
+/* ---------------------- */
+
+.projects {
+  grid-column: 3 /8;
+  grid-row: 5/7;
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+
+.project-one {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.project-one-box {
+  grid-column: 1/7;
+  grid-row: 2/7;
+}
+
+.project:first-of-type {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.project:nth-of-type(2) {
+  grid-column: 3/6;
+  grid-row: 1/2;
+}
+
+.project:last-of-type {
+  grid-column: 3/6;
+  grid-row: 2/3;
+}
+
+/* -----------------S---- */
+/*06 CTA SECTION */
+/* ---------------------- */
+.cta {
+  grid-column: 2/7;
+  grid-row: 7/9;
+  display: grid;
+}
+
+/* ---------------------- */
+/*07 FOOTER SECTION */
+/* ---------------------- */
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 13.4rem;
 }
