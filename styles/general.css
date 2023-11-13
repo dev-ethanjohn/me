@@ -62,3 +62,8 @@ body {
   grid-template-columns: minmax(0, 40rem) minmax(0, 103.2rem);
   column-gap: 3.2rem;
 }
+
+.center {
+  max-width: 146.4rem;
+  margin: 0 auto;
+}
